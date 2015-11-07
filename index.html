@@ -47,7 +47,10 @@
 				<h1>Developer Web Presence</h1>
 				<h3><i class="fa fa-github fa-1x"></i> How to use github to develop web presence</h3>
 				<p>
-					<small>by <a href="https://www.github.com/joshuajharris">Joshua Harris</a> / ACM Secretary</small>
+					<small>by
+						<a href="https://www.github.com/joshuajharris">
+							<i class="fa fa-github fa-1x"></i> joshuajharris
+						</a> / ODU ACM Secretary</small>
 				</p>
 			</section>
 
@@ -56,7 +59,10 @@
 				<h1>Welcome</h1>
 				<p></p>
 				<aside class="notes">
-
+					<ul>
+						<li>Get you started contributing, and sharing projects</li>
+						<li>Importance: Gain experience, get your name out there</li>
+					</ul>
 				</aside>
 			</section>
 			<!-- end Title Slide -->
@@ -68,6 +74,7 @@
 				<aside class="notes">
 					<ul>
 						<li>Source Version Control</li>
+						<li>Used at major companies like....</li>
 					</ul>
 				</aside>
 			</section>
@@ -110,36 +117,90 @@
 					<h4>Mac OSX installed by default</h4>
 				</p>
 				<aside class="notes">
-					No Notes
+					<ul>
+						<li>Git Bash Should be installed on the lab computers</li>
+						<li>Git gui clients</li>
+					</ul>
 				</aside>
 			</section>
 			<!-- end Git Install -->
 
 			<!-- Quick Check -->
 			<section data-background="https://git-for-windows.github.io/img/git_logo.png" data-background-size="250px" data-background-position="top left">
-				<h2>Quick Check</h2>
+				<h2>Quick Check (Mac & Linux)</h2>
 				<p>
 					<code>git --version</code>
+					<h4>Windows: check if git bash is installed</h4>
 				</p>
 				<aside class="notes"></aside>
 			</section>
 			<!-- end Quick Check -->
 
+			<!-- Git Basics 1 -->
+			<section data-background="https://git-for-windows.github.io/img/git_logo.png" data-background-size="250px" data-background-position="top left">
+				<h2>Git Basics</h2>
+				<p>
+					Inside of your project directory, type
+					<pre style="font-size: 1em">
+						<code>git init</code>
+					</pre>
+				</p>
+				<aside class="notes"></aside>
+			</section>
+			<!-- end Git Basics 1 -->
+
+			<!-- Git Basics 2 -->
+			<section data-background="https://git-for-windows.github.io/img/git_logo.png" data-background-size="250px" data-background-position="top left">
+				<h2>Git Basics cont...</h2>
+				<p>
+					Check status, Add a file
+					<pre style="font-size: 1em">
+						<code>
+git status
+git add test.js
+						</code>
+					</pre>
+				</p>
+				<aside class="notes"></aside>
+			</section>
+			<!-- end Git Basics 2 -->
+
+			<!-- Git Basics 3 -->
+			<section data-background="https://git-for-windows.github.io/img/git_logo.png" data-background-size="250px" data-background-position="top left">
+				<h2>Git Basics cont...</h2>
+				<p>
+					Commit
+					<pre style="font-size: 1em">
+						<code>git commit -m 'Added a super awesome test file'</code>
+					</pre>
+				</p>
+				<aside class="notes"></aside>
+			</section>
+			<!-- end Git Basics 3 -->
+
 			<!-- Branches Intro -->
 			<section data-background="https://git-for-windows.github.io/img/git_logo.png" data-background-size="250px" data-background-position="top left">
 				<h2>Branches</h2>
 				<p></p>
-				<aside class="notes"></aside>
+				<aside class="notes">
+					"Branching means you diverge from the main line of development and continue to do work without messing with that main line"
+					from git docs
+				</aside>
 			</section>
 			<!-- end Branches Intro -->
 
 			<!-- Branches 1 -->
 			<section data-background="https://git-for-windows.github.io/img/git_logo.png" data-background-size="250px" data-background-position="top left">
-				<h2>Branches</h2>
+				<h2>Branches example</h2>
 				<p>
 					<img src="https://git-scm.com/figures/18333fig0303-tn.png" width="800px" />
 				</p>
-				<aside class="notes"></aside>
+				<aside class="notes">
+					<ul>
+						<li>One Branch - master</li>
+						<li>Green: Commit</li>
+					</ul>
+				</aside>
 			</section>
 			<!-- end Branches 1 -->
 
@@ -151,7 +212,12 @@
 					</pre>
 					<img src="https://git-scm.com/figures/18333fig0304-tn.png" width="800px" />
 				</p>
-				<aside class="notes"></aside>
+				<aside class="notes">
+					<ul>
+						<li>Created a new branch</li>
+						<li>Branch initially is exactly the same as where it was branched from</li>
+					</ul>
+				</aside>
 			</section>
 			<!-- end Branches 2 -->
 
@@ -161,7 +227,12 @@
 				<p>
 					<img src="https://git-scm.com/figures/18333fig0305-tn.png" width="800px" />
 				</p>
-				<aside class="notes"></aside>
+				<aside class="notes">
+					<ul>
+						<li>Head: Pointer to current branch</li>
+						<li>Haven't switched to new branch yet, still on master</li>
+					</ul>
+				</aside>
 			</section>
 			<!-- end Branches 3 -->
 
@@ -173,7 +244,11 @@
 				<p>
 					<img src="https://git-scm.com/figures/18333fig0306-tn.png" width="670px" />
 				</p>
-				<aside class="notes"></aside>
+				<aside class="notes">
+					<ul>
+						<li>Head: Switched to test branch</li>
+					</ul>
+				</aside>
 			</section>
 			<!-- end Branches 4 -->
 
@@ -188,7 +263,20 @@ git commit -a -m 'made a change'
 					</pre>
 					<img src="https://git-scm.com/figures/18333fig0307-tn.png" width="700px" />
 				</p>
-				<aside class="notes"></aside>
+				<aside class="notes">
+					<ul>
+						<li>Used vim to make changes to file</li>
+						<li>
+							-a
+							--all
+							automatically stage files that have been modified and deleted
+						</li>
+						<li>
+							but new files you have not told Git about are not affected.
+						</li>
+						<li>-m message</li>
+					</ul>
+				</aside>
 			</section>
 			<!-- end Branches 5 -->
 
@@ -200,7 +288,12 @@ git commit -a -m 'made a change'
 				<p>
 					<img src="https://git-scm.com/figures/18333fig0308-tn.png" width="700px" />
 				</p>
-				<aside class="notes"></aside>
+				<aside class="notes">
+					<ul>
+						<li>Switched to master branch</li>
+						<li>Notice: testing points to commit ahead of master</li>
+					</ul>
+				</aside>
 			</section>
 			<!-- end Branches 6 -->
 
@@ -215,13 +308,30 @@ git commit -a -m 'made other changes'
 				<p>
 					<img src="https://git-scm.com/figures/18333fig0309-tn.png" width="650px" />
 				</p>
-				<aside class="notes"></aside>
+				<aside class="notes">
+					<ul>
+						<li>Made new commit as master</li>
+						<li>Can really start to see a branching effect</li>
+					</ul>
+				</aside>
 			</section>
 			<!-- end Branches 7 -->
 
 			<!-- Try Github -->
 			<section data-background="https://git-for-windows.github.io/img/git_logo.png" data-background-size="250px" data-background-position="top left">
-				<a href="https://try.github.io" target="_blank"><b>try.github.io</b></a>
+				<h2>Git Learning Resources</h2>
+				<p>
+					<ul>
+						<li>
+							<a href="https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf" target="_blank">
+								<b>Git Cheatsheet</b>
+							</a>
+						</li>
+						<li>
+							<a href="https://try.github.io" target="_blank"><b>try.github.io</b></a>
+						</li>
+					</ul>
+				</p>
 				<aside class="notes"></aside>
 			</section>
 			<!-- end Try Github -->
@@ -234,16 +344,59 @@ git commit -a -m 'made other changes'
 				<p>
 				</p>
 				<aside class="notes">
+					<ul>
+						<li>Most employers now ask for github profile on resume</li>
+					</ul>
 				</aside>
 			</section>
 			<!-- end What is Github -->
 
+			<!-- Who Uses Github -->
+			<section data-background="http://limenet.ch/wp-content/uploads/GItHub_Logo-624x275.png" data-background-size="600px" data-background-position="bottom left">
+				<h2>
+					<i class="fa fa-github fa-1x"></i> Who Uses Github
+				</h2>
+				<p>
+					<table>
+						<caption><a href="http://jmduke.com/posts/how-big-tech-uses-github/">From 2013, jmduke</a></caption>
+						<thead>
+							<tr><th>Company</th><th>Repositories</th><th>Forks</th><th>Stars</th><th>Language</th></tr>
+						</thead>
+						<tbody>
+							<tr><td>google</td><td>85</td><td>1336</td><td>12250</td><td>C</td></tr>
+							<tr><td>adobe</td><td>32</td><td>3862</td><td>19231</td><td>C++</td></tr>
+							<tr><td>twitter</td><td>103</td><td>6057</td><td>43780</td><td>C++</td></tr>
+							<tr><td>paypal</td><td>114</td><td>1046</td><td>1868</td><td>None</td></tr>
+							<tr><td>aws</td><td>18</td><td>1693</td><td>6221</td><td>Java</td></tr>
+							<tr><td>yahoo</td><td>143</td><td>1129</td><td>4805</td><td>JavaScript</td></tr>
+							<tr><td>linkedin</td><td>52</td><td>1501</td><td>7932</td><td>Java</td></tr>
+							<tr><td>facebook</td><td>102</td><td>15311</td><td>64907</td><td>C++</td></tr>
+							<tr><td>dropbox</td><td>19</td><td>178</td><td>1329</td><td>PHP</td></tr>
+							<tr><td>mozilla</td><td>687</td><td>11500</td><td>44232</td><td>C++</td></tr>
+						</tbody>
+					</table>
+				</p>
+				<aside class="notes">
+					<ul>
+						<li>About 50 Countries Governments use github</li>
+					</ul>
+				</aside>
+			</section>
+			<!-- end Who Uses Github -->
+
 			<!-- Github more in depth -->
 			<section>
 				<h2>
-					Github in Depth
+					Github Keywords
 				</h2>
 				<p>
+					<ul>
+					<li><b>repo:</b> Repository, storage space for your project</li>
+					<li><b>fork:</b> a copy of a repository</li>
+					<li><b>issues:</b> way to keep track of bugs, tasks, and enhancements</li>
+					<li><b>review:</b> high-level overview of what exactly has changed between your branch</li>
+					<li><b>pull request:</b> let you tell others about changes you've pushed to a repository on GitHub</li>
+					</ul>
 				</p>
 				<aside class="notes">
 				</aside>
@@ -281,23 +434,49 @@ git commit -a -m 'made other changes'
 			</section>
 			<!-- end Auto Generate project -->
 
+			<!-- Closing -->
+			<section>
+				<h2>
+					Thanks
+				</h2>
+				<p>
+					<a href="https://github.com/joshuajharris">
+						joshuajharris on <i class="fa fa-github fa-2x"></i>
+					</a>
+				</p>
+				<aside class="notes">
+				</aside>
+			</section>
+			<!-- end Closing -->
+
 			<!-- References -->
 			<section>
 				<h2>
 					References
 				</h2>
 				<p>
-					<a href="https://git-scm.com/book/en/v1/Git-Branching-What-a-Branch-Is" target="_blank">
-						https://git-scm.com/book/en/v1/Git-Branching-What-a-Branch-Is
-					</a>
-					<a href="https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git" target="_blank">
-						https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git
-					</a>
+					<ul>
+						<li>
+							<a href="https://git-scm.com/book/en/v1/Git-Branching-What-a-Branch-Is" target="_blank">
+								https://git-scm.com/book/en/v1/Git-Branching-What-a-Branch-Is
+							</a>
+						</li>
+						<li>
+							<a href="https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git" target="_blank">
+								https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git
+							</a>
+						</li>
+						<li>
+							<a href="https://help.github.com/" target="_blank">
+								https://help.github.com/
+							</a>
+						</li>
+					</ul>
 				</p>
 				<aside class="notes">
 				</aside>
 			</section>
-			<!-- end Auto Generate project -->
+			<!-- end References -->
 
 
 		</div>
